@@ -11,7 +11,7 @@ output:
 
 # Preface
 
-This file should contain introductory material.
+This file can contain introductory material.
 
 It can also include R:
 
@@ -20,13 +20,14 @@ x <- rnorm(10)
 plot(x)
 ```
 
-To include additional files, include chunks such as^[To get Rmarkdown to not evaluate this, there is a zero-width space inside the triple tick. Remove it to
-get it to work.]
+To include additional files, include chunks such as
 
 
-    `​``{r child = "file.Rmd"}
-    ```
+````markdown
+`r ''````{r child = "stata_markdown/file.Rmd"}
+`r ''````
+````
 
 
-```{r child = 'stata.Rmd'}
+```{r child = 'stata_markdown/stata.Rmd'}
 ```

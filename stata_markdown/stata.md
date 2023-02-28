@@ -1,17 +1,14 @@
-^#^ Including a Stata Chunk
+# Including a Stata Chunk
 
-This document is a Stata markdown file. There are a few customizations to Markdown that need to be made to ease the move to Rmarkdown. Basically when
-this file is build, Stata will convert it straight to HTML. To avoid some aspects of it being converted to HTML, we'll modify existing tags (by
-surrounding them with `^`), then use a script to fix it up.
+This document is a Stata markdown file. Any normal markdown (e.g. **bold** text,
+`code chunks` or sections) is preserved in the conversion to Rmarkdown.
 
-- Sections. For section headers, instead of `^#^`, `^#^^#^`, etc, we use `\^\#\^`, `\^\#\#\^`.
-- Equations. For inline equations (`\$`) or full-line equations (`\$\$`), instead use `\^\$\^` and `\^​\$\$\^`.
-
-We can include Stata code easily
+We can include Stata code easily:
 
 ~~~~
 <<dd_do>>
 sysuse auto
+mean mpg
 <</dd_do>>
 ~~~~
 
@@ -24,3 +21,16 @@ twoway scatter mpg trunk
 ~~~~
 
 <<dd_graph: replace>>
+
+
+~~~~
+<<dd_do: quietly>>
+mean trunk
+<</dd_do>>
+~~~~
+
+We can also include equations inline ($y = 3$) or full-line:
+
+$$
+\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$
