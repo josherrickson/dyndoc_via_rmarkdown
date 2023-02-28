@@ -33,11 +33,16 @@ Files:
 
 ## History
 
-### 2.0
+### 2.0: Feb 2023
 
-Switch from `dyndoc` to `dyntext` which greatly simplified the Makefile.
+- Switch from `dyndoc` to `dyntext` which greatly simplified the Makefile.
+- Better removal of empty code blocks when using `quietly`.
 
-### 1.0
+### 1.X: Mar 2018 - Oct 2019
 
-Initial creation of this repo. Used `dyndoc` and did a bunch of post-conversion
+- Various small tweaks
+
+### 1.0: Feb 2018
+
+- Initial creation of this repo. Used `dyndoc` and did a bunch of post-conversion
 cleanup to prepare for RMarkdown.
