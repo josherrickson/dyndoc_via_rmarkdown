@@ -1,6 +1,4 @@
-# Combining Stata's Dynamic documents and R's RMarkdown
-
-(Version 2.0 - supports Stata 17)
+# Combining Stata's Dynamic documents and R's RMarkdown v2.0
 
 Stata's [Dynamic documents](https://www.stata.com/manuals/rpt.pdf) is a terrific
 start towards an RMarkdown-like support, but it doesn't have the same ecosystem
@@ -32,3 +30,14 @@ Files:
       `make`.
     - `make index.html` - Compiles just the index.Rmd into an html. Useful for
       debugging. Called if needed during `make`.
+
+## History
+
+### 2.0
+
+Switch from `dyndoc` to `dyntext` which greatly simplified the Makefile.
+
+### 1.0
+
+Initial creation of this repo. Used `dyndoc` and did a bunch of post-conversion
+cleanup to prepare for RMarkdown.
