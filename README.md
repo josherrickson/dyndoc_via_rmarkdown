@@ -1,5 +1,9 @@
 # Combining Stata's Dynamic documents and R's RMarkdown v2.0
 
+Note: I've released an example to combining [Stata dynamic documents and
+Quarto](https://github.com/josherrickson/dyndoc_via_quarto). This document is
+still valid but will no longer be update.
+
 Stata's [Dynamic documents](https://www.stata.com/manuals/rpt.pdf) is a terrific
 start towards an RMarkdown-like support, but it doesn't have the same ecosystem
 of support that RMarkdown does.
